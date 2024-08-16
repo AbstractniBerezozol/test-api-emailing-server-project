@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { MailerModule } from '@nestjs-modules/mailer';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { HttpModule, HttpService } from '@nestjs/axios';
+import { HttpModule } from '@nestjs/axios';
+import { AppService } from './app.service';
 
 @Module({
   imports: [
