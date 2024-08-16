@@ -13,7 +13,7 @@ describe('AppService', () => {
         AppService,
         {
           provide: MailerService,
-          useValue: jest.fn(),
+          useValue: { sendMail: jest.fn() },
         },
       ],
     }).compile();
