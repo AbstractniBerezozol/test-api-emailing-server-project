@@ -8,7 +8,7 @@ import { AppService } from './app.service';
 @Module({
   imports: [
     HttpModule,
-    ConfigModule.forRoot({ envFilePath: 'env', isGlobal: true }),
+    ConfigModule.forRoot({ isGlobal: true }),
     MailerModule.forRootAsync({
       imports: [ConfigModule],
       useFactory: async (configService: ConfigService) => ({
